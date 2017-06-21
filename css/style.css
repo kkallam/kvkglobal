@@ -1,0 +1,175 @@
+
+/*Page Font*/
+@import url('https://fonts.googleapis.com/css?family=Rokkitt');
+
+/*Menu font*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+/*Footer font*/
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+
+body{
+	/*background-color: #6f8197;*/
+	background-color: #2a8199;
+	padding: 10px;
+	font-family: 'Rokkitt', serif;
+	width: 80%;
+	margin: 0 auto;
+
+}
+header{
+	width: 100%;
+}
+header  h1{
+	text-align: center;
+	color: #fff;
+}
+
+
+header ul li {
+	display: inline-block;
+	padding: 5px 15px;
+	/*background-color: #b3bc20;*/
+	background-color: mediumaquamarine;
+	cursor: pointer;
+}
+header ul li a{
+	text-decoration: none;
+	font-family: 'Alegreya', serif;
+	color: #111;
+	font-weight: bold;
+}
+.textAlignCenter{
+	text-align: center;
+}
+
+.contentDiv{
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #5dbede;
+	padding: 10px;
+	background-color: #eee;
+	/*-webkit-box-shadow:0 0 20px #5dbede; */
+	-webkit-box-shadow:0 0 40px #5dbede;
+    -moz-box-shadow: 0 0 20px #5dbede; 
+    box-shadow:0 0 40px #5dbede;
+    margin-bottom: 25px;
+    height: auto;
+    overflow: auto;
+}
+.paseBtns{
+	background-color: #b3bc20;
+	padding: 5px 10px;
+	margin: 5px;
+	color: #a0294c;
+	cursor: pointer;
+}
+.selected{
+	/*background-color: #a0294c;*/
+	/*background-color: #393;*/
+	background-color: #d3d3d3;
+}
+.paseNav{
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+	
+	
+}
+.paseScheduleDiv{
+	border-right: 1px solid #a369af; 
+	width: 20%;
+	float: left;
+	min-height: 380px;
+	height: 100%;
+    background-color: #696969;
+    background-color: #ccc;
+}
+
+.paseScheduleDiv ul{
+	/*background-color: #6f8197;*/
+	padding: 10px;
+	
+}
+.paseScheduleDiv ul li{
+	display: inline-block;
+	padding: 5px 10px;
+	/*background-color: #b3bc20;*/
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.paseScheduleDiv ul li a{
+	text-decoration: underline;
+	font-family: 'Alegreya', serif;
+	color: #111;
+	font-weight: bold;
+	font-size: 18px;
+}
+.viewPaseDiv h2{
+	margin:0;
+}
+.paseContent {
+	width: 75%;
+	float: left;
+	margin-left:20px;
+}
+
+.createPaseTable {
+	background-color: #ccc;
+	width: 50%;
+	padding: 5px;
+	border-collapse: collapse;
+}
+/*.createPaseTable tr:nth-child(odd){
+	background-color: #fff;
+}*/
+.createPaseTable th{
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #dddddd;
+}
+.createPaseTable td{
+	padding: 5px;
+	 border: 1px solid #dddddd;
+}
+
+.createPaseTable td input[type=text] {
+	width: 90%;
+}
+
+.excelData table{
+	width: 60%;
+}
+.excelData table tr:nth-child(even){
+	background-color: #ccc;
+}
+.excelData table tr td{
+	border:1px solid #aaa !important;
+	padding: 5px;
+}
+/*#showRecords{
+	width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)
+}*/
+
+
+
+
+footer{
+	position: relative;
+	bottom: 0;
+	left:0;
+	right:0;
+	font-family: 'Courgette', cursive;
+	color: #fff;
+}
+footer h4{
+	text-align: center;
+	
+}
+

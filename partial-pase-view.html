@@ -1,0 +1,77 @@
+<div class="viewPaseDiv" ng-init="loadDataUsingAngularJS()">
+    <h2>{{welcomeMsg}}</h2>
+    <!-- <h3>{{comingSoon}} ...</h3> -->
+
+
+<!-- <div class="iframeDiv">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1xY1AKPzBl2EzSr1kRtfbdPuBMuO6sKUt4B8AcUF1QWyZQg/viewform?embedded=true#start=embed" width="760" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div> -->
+
+    <div ng-show="showCheck" >
+        Show This Week PASE Schedule: <input type="checkbox" ng-model="showRecords" ng-click="showInfo">
+    </div>
+
+    <div id="showRecords" ng-show="showRecords" ng-controller="viewPaseCtrl">
+        <!-- <h4>The no.of records found in Excel sheet is: {{noOfRecords}}</h4> -->
+
+        <div class="excelData">
+            <table>
+                <tr>
+                    <td>Date: {{lastRecord.Date}} <br/>
+                        Time: {{lastRecord.Time}}
+                    </td>
+                    <td>Location: <br/>
+                         {{lastRecord.Location}}</td>
+                </tr>
+                <tr>
+                    <td>Business Plan</td>
+                    <td>{{lastRecord.Plan_Shower}}</td>
+                </tr>
+                <tr>
+                    <td>Host</td>
+                    <td>{{lastRecord.Host}}</td>
+                </tr>
+                <tr>
+                    <td>Timer</td>
+                    <td>{{lastRecord.Timer}}</td>
+                </tr>
+                <tr>
+                    <td>{{lastRecord.Product1_Topic}}</td>
+                    <td>{{lastRecord.Product1_Speaker}}</td>
+                </tr>
+                <tr>
+                    <td>{{lastRecord.Product2_Topic}}</td>
+                    <td>{{lastRecord.Product2_Speaker}}</td>
+                </tr>
+                 <tr>
+                    <td>{{lastRecord.Product3_Topic}}</td>
+                    <td>{{lastRecord.Product3_Speaker}}</td>
+                </tr>
+                <tr>
+                     <td>BSM:</td>
+                    <td>{{lastRecord.BSM}}</td>
+                </tr>
+                <tr>
+                     <td>Book:</td>
+                    <td>{{lastRecord.Book}}</td>
+                </tr>
+                <tr>
+                     <td>BWW TP/TV/Web Space:</td>
+                    <td>{{lastRecord.BWW_TP}}</td>
+                </tr>
+                <tr>
+                    <td>{{lastRecord.Special_Training_Topic}}</td>
+                    <td>{{lastRecord.Special_Training_Speakers}}</td>
+                </tr>
+                <tr>
+
+                    <td colspan="2" class="textAlignCenter">Wrap up: {{lastRecord.Wrapup_Speakers}}</td>
+                    
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
