@@ -13,15 +13,6 @@
     	$(this).addClass('selected');
 	});
 
-
-	// var state = document.readyState
-	//   if (state == 'complete') {
-	//       setTimeout(function(){
-	//           document.getElementById('interactive');
-	//          document.getElementById('showRecords').style.visibility="hidden";
-	//       },1000);
-	//   }
-
 })();
 
 
@@ -72,13 +63,34 @@ myApp.controller('viewPaseCtrl', function($scope, $http){
 		$scope.noOfRecords = data.length;
     	$scope.lastRecord = $scope.excelRes[$scope.excelRes.length-1];
     	console.log($scope.lastRecord);
+    	if($scope.lastRecord.Do_we_Have_PASE_this_week == "Yes"){
+    		$scope.hidePase = false;
+    		$scope.showPase = true;
+    	}
+    	else{
+    		$scope.hidePase = true;
+    		$scope.showPase = false;
+    	}
 	};
 	
 });
 
 
 
+// Open Meeting Controllers
 
+myApp.controller('createOpenCtrl', function($scope){
+	$scope.welcomeMsg = "Creating Open Meeting Page";
+	$scope.comingSoon = "Coming Soon";
+	
+});
+
+
+myApp.controller('viewOpenCtrl', function($scope){
+	$scope.welcomeMsg = "View Open Meeting Page";
+	$scope.comingSoon = "Coming Soon";
+	
+});
 
 
 
