@@ -70,14 +70,14 @@ header ul li a{
 	/*background-color: #393;*/
 	background-color: #d3d3d3;
 }
-.paseNav{
+.paseNav, .openNav, .eventsNav{
 	width: 100%;
 	min-height: 500px;
 	height: auto;
 	
 	
 }
-.paseScheduleDiv{
+.paseNavDiv, .openNavDiv, .eventsNavDiv{
 	border-right: 1px solid #a369af; 
 	width: 20%;
 	float: left;
@@ -87,29 +87,29 @@ header ul li a{
     background-color: #ccc;
 }
 
-.paseScheduleDiv ul{
+.paseNavDiv ul, .openNavDiv ul, .eventsNavDiv ul{
 	/*background-color: #6f8197;*/
 	padding: 10px;
 	
 }
-.paseScheduleDiv ul li{
+.paseNavDiv ul li, .openNavDiv ul li, .eventsNavDiv ul li{
 	display: inline-block;
 	padding: 5px 10px;
 	/*background-color: #b3bc20;*/
 	cursor: pointer;
 	margin-bottom: 10px;
 }
-.paseScheduleDiv ul li a{
+.paseNavDiv ul li a, .openNavDiv ul li a, .eventsNavDiv ul li a{
 	text-decoration: underline;
 	font-family: 'Alegreya', serif;
 	color: #111;
 	font-weight: bold;
 	font-size: 18px;
 }
-.viewPaseDiv h2{
+.viewPaseDiv h2, .viewOpen h2, .viewEvents h2{
 	margin:0;
 }
-.paseContent {
+.paseContent, .openContent, .eventsContent {
 	width: 75%;
 	float: left;
 	margin-left:20px;
@@ -156,7 +156,12 @@ header ul li a{
     z-index:9999;
     background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)
 }*/
-
+.noPase{
+	color: #bc1339;
+}
+.welcomePase{
+	color: #696969;
+}
 
 
 
