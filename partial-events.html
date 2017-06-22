@@ -1,4 +1,33 @@
-<div class="jumbotron text-center">
+<!-- <div class="jumbotron text-center">
     <h1>The Events Details Page<br/> </h1>
     <h2>Coming Soon...</h2>
+</div> -->
+
+<div class="eventsNav">
+
+   	<div class="welcomeEvents">
+		<h4>Welcome to Events section. You can see all the events here. If you have any questions, Feel free to reach out to your upline.</h4>
+		
+	</div>
+
+	<div class="eventsNavDiv">
+		<ul class="eventsUl">
+			<li ui-sref=".createEvents" id="createEvents">
+				<a> Create a New Event(s) </a>
+			</li>
+
+			<li ui-sref=".viewEvents" id="viewEvents">
+				<a> View All Events </a>
+			</li>
+			<li ui-sref=".goGetters" id="goGetters">
+				<a>Go Getters Event</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="eventsContent" ui-view></div>
+
+
+
 </div>

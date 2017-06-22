@@ -14,7 +14,7 @@
     <div id="showRecords" ng-show="showRecords" ng-controller="viewPaseCtrl">
         <!-- <h4>The no.of records found in Excel sheet is: {{noOfRecords}}</h4> -->
 
-        <div class="excelData">
+        <div class="excelData" ng-show="showPase">
             <table>
                 <tr>
                     <td>Date: {{lastRecord.Date}} <br/>
@@ -69,6 +69,11 @@
                     
                 </tr>
             </table>
+        </div>
+
+        <div ng-show="hidePase">
+            <br/><h4>We Don't have PASE this week as</h4> 
+            <h2 class="noPase"> {{lastRecord.Reason}}</h2>
         </div>
 
     </div>
