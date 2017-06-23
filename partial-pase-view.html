@@ -1,15 +1,7 @@
 <div class="viewPaseDiv" ng-init="loadDataUsingAngularJS()">
-    <h2>{{welcomeMsg}}</h2>
-    <!-- <h3>{{comingSoon}} ...</h3> -->
-
-
-<!-- <div class="iframeDiv">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1xY1AKPzBl2EzSr1kRtfbdPuBMuO6sKUt4B8AcUF1QWyZQg/viewform?embedded=true#start=embed" width="760" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div> -->
-
-    <div ng-show="showCheck" >
+    <h4>
         Show This Week PASE Schedule: <input type="checkbox" ng-model="showRecords" ng-click="showInfo">
-    </div>
+    </h4>
 
     <div id="showRecords" ng-show="showRecords" ng-controller="viewPaseCtrl">
         <!-- <h4>The no.of records found in Excel sheet is: {{noOfRecords}}</h4> -->
@@ -17,51 +9,51 @@
         <div class="excelData" ng-show="showPase">
             <table>
                 <tr>
-                    <td>Date: {{lastRecord.Date}} <br/>
-                        Time: {{lastRecord.Time}}
+                    <td><b>Date: {{lastRecord.Date}} <br/>
+                        Time: {{lastRecord.Time}} </b>
                     </td>
                     <td>Location: <br/>
                          {{lastRecord.Location}}</td>
                 </tr>
                 <tr>
                     <td>Business Plan</td>
-                    <td>{{lastRecord.Plan_Shower}}</td>
+                    <td><b>{{lastRecord.Plan_Shower}}</b></td>
                 </tr>
                 <tr>
                     <td>Host</td>
-                    <td>{{lastRecord.Host}}</td>
+                    <td><b>{{lastRecord.Host}}</b></td>
                 </tr>
                 <tr>
                     <td>Timer</td>
-                    <td>{{lastRecord.Timer}}</td>
+                    <td><b>{{lastRecord.Timer}}</b></td>
                 </tr>
                 <tr>
                     <td>{{lastRecord.Product1_Topic}}</td>
-                    <td>{{lastRecord.Product1_Speaker}}</td>
+                    <td><b>{{lastRecord.Product1_Speaker}}</b></td>
                 </tr>
                 <tr>
                     <td>{{lastRecord.Product2_Topic}}</td>
-                    <td>{{lastRecord.Product2_Speaker}}</td>
+                    <td><b>{{lastRecord.Product2_Speaker}}</b></td>
                 </tr>
                  <tr>
                     <td>{{lastRecord.Product3_Topic}}</td>
-                    <td>{{lastRecord.Product3_Speaker}}</td>
+                    <td><b>{{lastRecord.Product3_Speaker}}</b></td>
                 </tr>
                 <tr>
                      <td>BSM:</td>
-                    <td>{{lastRecord.BSM}}</td>
+                    <td><b>{{lastRecord.BSM}}</b></td>
                 </tr>
                 <tr>
                      <td>Book:</td>
-                    <td>{{lastRecord.Book}}</td>
+                    <td><b>{{lastRecord.Book}}</b></td>
                 </tr>
                 <tr>
                      <td>BWW TP/TV/Web Space:</td>
-                    <td>{{lastRecord.BWW_TP}}</td>
+                    <td><b>{{lastRecord.BWW_TP}}</b></td>
                 </tr>
                 <tr>
                     <td>{{lastRecord.Special_Training_Topic}}</td>
-                    <td>{{lastRecord.Special_Training_Speakers}}</td>
+                    <td><b>{{lastRecord.Special_Training_Speakers}}</b></td>
                 </tr>
                 <tr>
 

@@ -1,9 +1,34 @@
-<div class="text-center">
-    <h2>Welcome to View Open Meeting Schedule Page..</h2>
-</div>
+
+<div class="" ng-init="loadOpenMeetingDataUsingAngularJS()">
+
+ 	<h4>
+        Show This Week Open Meeting Schedule: <input type="checkbox" ng-model="showOpenMeetingRecords" ng-click="showOpenMeetingInfo">
+    </h4>
 
 
-<br/>
-<div class="text-center">
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffcc99&amp;src=htthb1mtk9nnr9fi63d5mahcr0%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="95%" height="400" frameborder="0" scrolling="no"></iframe>
+	<div id="showOpenMeetingRecords" ng-show="showOpenMeetingRecords" ng-controller="viewOpenCtrl">
+      
+        <div class="openMeetingTable">
+
+			<table>
+                <tr>
+                    <td> Date: <b>{{openMeetingLastRecord.Date}}</b> <br/>
+                         Time: <b>{{openMeetingLastRecord.Time}}</b>
+                    </td>
+                    <td>Location: <br/>
+                         <b>{{openMeetingLastRecord.Address}}</b></td>
+                </tr>
+                <tr>
+                    <td>Speakers</td>
+                    <td class="bgColorTD"><b>{{openMeetingLastRecord.Speakers}}</b></td>
+                </tr>
+                <tr>
+                    <td>Host</td>
+                    <td><b>{{openMeetingLastRecord.Host}}</b></b></td>
+                </tr>
+        </div>
+
+    </div>
+
 </div>
+
