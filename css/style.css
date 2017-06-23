@@ -87,19 +87,19 @@ header ul li a{
     background-color: #ccc;
 }
 
-.paseNavDiv ul, .openNavDiv ul, .eventsNavDiv ul{
+.paseNavDiv ul, .openNavDiv ul, .eventsNavDiv ul, .goGettersUl {
 	/*background-color: #6f8197;*/
 	padding: 10px;
 	
 }
-.paseNavDiv ul li, .openNavDiv ul li, .eventsNavDiv ul li{
+.paseNavDiv ul li, .openNavDiv ul li, .eventsNavDiv ul li, .goGettersUl li{
 	display: inline-block;
 	padding: 5px 10px;
 	/*background-color: #b3bc20;*/
 	cursor: pointer;
 	margin-bottom: 10px;
 }
-.paseNavDiv ul li a, .openNavDiv ul li a, .eventsNavDiv ul li a{
+.paseNavDiv ul li a, .openNavDiv ul li a, .eventsNavDiv ul li a, .goGettersUl li a{
 	text-decoration: underline;
 	font-family: 'Alegreya', serif;
 	color: #111;
@@ -148,6 +148,7 @@ header ul li a{
 .excelData table tr td{
 	border:1px solid #aaa !important;
 	padding: 5px;
+	font-size: 16px;
 }
 /*#showRecords{
 	width:100%;
@@ -162,6 +163,39 @@ header ul li a{
 .welcomePase{
 	color: #696969;
 }
+.goGettersUl li {
+    background-color: aquamarine;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.goGettersUl li:hover{
+	background-color: #2a8199;
+}
+.goGettersUl li:active{
+	background-color: #2a8199;
+}
+.goGettersUl li a{
+	text-decoration: none;
+}
+.openMeetingTable table {
+	width: 90%;
+}
+.openMeetingTable table td{
+	border: 2px solid #aaa;
+    height: 30px;
+    background-color: cornsilk;
+    color: black;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+.bgColorTD{
+	    font-size: 20px !important;
+	    color: #f00 !important;
+}
+
+
+
 
 
 
